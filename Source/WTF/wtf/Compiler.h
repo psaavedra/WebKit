@@ -618,6 +618,8 @@
 
 #define SUPPRESS_MEMORY_UNSAFE_CAST \
     IGNORE_CLANG_STATIC_ANALYZER_WARNINGS_ATTRIBUTE("alpha.webkit.MemoryUnsafeCastChecker")
+#define SUPPRESS_MEMORY_UNSAFE_CAST_MEMBER \
+    IGNORE_CLANG_STATIC_ANALYZER_WARNINGS_ATTRIBUTE_ON_MEMBER("alpha.webkit.MemoryUnsafeCastChecker")
 
 #if defined(CLANG_WEBKIT_BRANCH) || !defined __clang_major__ || __clang_major__ >= 21
 #define SUPPRESS_FORWARD_DECL_MEMBER \

@@ -205,7 +205,7 @@ public:
     WTF_EXPORT_PRIVATE TimeWithDynamicClockType LEGACY_NODELETE operator-(const TimeWithDynamicClockType&) const;
     
     // FIXME: Remove this suppression once rdar://190195764 is fixed.
-    SUPPRESS_MEMORY_UNSAFE_CAST friend constexpr auto operator<=>(Seconds, Seconds) = default;
+    SUPPRESS_MEMORY_UNSAFE_CAST_MEMBER friend constexpr auto operator<=>(Seconds, Seconds) = default;
     
     WTF_EXPORT_PRIVATE void dump(PrintStream&) const;
     
